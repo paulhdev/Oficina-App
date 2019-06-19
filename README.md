@@ -18,7 +18,7 @@
 
 #### Rodando a aplicação
 
-1. Instale algum emulador Android como Genymotion, use o emulador do próprio Android Studio _ou então uma opção um pouco mais fácil:_ instale o dbServices, ative a depuração USB no modo desenvolvedor do seu despositivo móvel e plugue no seu computador ou notebook
+1. Instale algum emulador Android como Genymotion, use o emulador do próprio Android Studio _ou então uma opção um pouco mais fácil:_ instale o _adb services_, ative a depuração USB no modo desenvolvedor do seu despositivo móvel e plugue no seu computador ou notebook
 2. Conectar seu dispositivo a internet para poder ocorrer o consumo da API
 3. Acesse a pasta criada do clone do repositório ou do download(depois de extraido)
 4. No seu terminal aberto no caminho da pasta rode o seguinte comando para instalar as dependências: _npm install_
