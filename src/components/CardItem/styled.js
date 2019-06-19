@@ -16,43 +16,76 @@ export const styles = StyleSheet.create({
         padding: 5,
         justifyContent: 'center',
     },
-    cardBody: {
-        flexDirection: 'row',
-        padding: 5,
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        height: 40,
-        marginTop: 10,
-        marginBottom: 10
-    },
     customer: {
-        fontSize: 20,
+        fontSize: 24,
         color: '#444',
         borderBottomWidth: 1,
         borderBottomColor: '#ddd'
     },
     seller: {
         fontSize: 18,
-        color: '#488aff',
+        color: '#848484',
         marginTop: 10,
         marginBottom: 10
     },
     value: {
-        fontSize: 18,
-        color: 'red',
+        fontSize: 20,
+        color: '#1cbfb5',
+        padding: 5,
+        alignItems: 'center',
+        height: 40,
+        marginBottom: 5,
         fontWeight: 'bold'
     },
     btnDescription: {
-        backgroundColor: '#488aff',
+        backgroundColor: '#3177bf',
         padding: 5,
-        height: 35,
+        height: 40,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 5
     },
     btnText: {
+        fontSize: 20,
         color: '#fff',
         margin: 10,
         fontWeight: 'bold'
+    },
+    // Modal styled
+    areaModal: {
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    modal: {
+        height: 60,
+        padding: 10
+    },
+    modalHeader: {
+        flexDirection:'row',
+        justifyContent: 'space-between',
+        height: 25
+    },
+    modalCustomerName: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#848484'
+    },
+    btnHideModal: {
+        backgroundColor: '#3177bf',
+        padding: 5,
+        height: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 5
+    },
+    btnTextModal: {
+        fontSize: 18,
+        color: '#fff',
+        fontWeight: 'bold'
+    },
+    descriptionText: {
+        padding: 10,
+        fontSize: 18,
+        color: '#444'
     }
 })
