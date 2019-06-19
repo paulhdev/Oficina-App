@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, TouchableOpacity, Modal } from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome5'
 
 import { styles } from './styled'
 
@@ -35,17 +36,20 @@ export default class CardItem extends Component {
                     <Text style={styles.btnText}>Descrição</Text>
                 </TouchableOpacity>
 
-                <View style={styles.areaModal}>
-                    <Modal style={styles.modal} animationType="slide" visible={this.state.modalVisible}>
-                        <View style={styles.modalHeader}>
-                            <Text style={styles.modalCustomerName}>Cliente: {this.props.data.customer}</Text>
-                            <TouchableOpacity style={styles.btnHideModal} onPress={() => this.hideModal(false)}>
-                                <Text style={styles.btnTextModal}>Sair</Text>
-                            </TouchableOpacity>
+                <Modal transparent={true} animationType="slide" visible={this.state.modalVisible}>
+                    <View style={styles.modalPosition}>
+                        <View style={styles.modal}>
+                            <View style={styles.modalHeader}>
+                                <Text style={styles.modalCustomerName}>Cliente: {this.props.data.customer}</Text>
+                                <TouchableOpacity onPress={() => this.hideModal(false)}>
+                                    <Icon name="times-circle" size={30} color="#ddd" />
+                                </TouchableOpacity>
+                            </View>
+                            <Text style={styles.TextInfoDescription}>Serviço realizado:</Text>
+                            <Text style={styles.descriptionText}> {this.props.data.description}</Text>
                         </View>
-                        <Text style={styles.descriptionText}>{this.props.data.description}</Text>
-                    </Modal>
-                </View>
+                    </View>
+                </Modal>
             </View>
         )
     }

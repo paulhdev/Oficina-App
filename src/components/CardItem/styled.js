@@ -52,40 +52,46 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     // Modal styled
-    areaModal: {
-        justifyContent: 'center',
-        alignItems: 'center'
+    modalPosition: {
+        flex: 1,
+        margin: 10,
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     modal: {
-        height: 60,
-        padding: 10
+        width: '100%',
+        height: 200,
+        padding: 10,
+        backgroundColor: '#3177bf',
+        borderRadius: 2,
+        shadowColor: '#333',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.9,
+        shadowRadius: 4,
+        elevation: 5
     },
     modalHeader: {
         flexDirection:'row',
         justifyContent: 'space-between',
-        height: 25
+        paddingTop: 10,
+        paddingBottom: 5,
+        borderBottomWidth: 1,
+        borderBottomColor: '#ddd'
     },
     modalCustomerName: {
-        fontSize: 18,
+        fontSize: 20,
         fontWeight: 'bold',
-        color: '#848484'
+        color: '#ddd'
     },
-    btnHideModal: {
-        backgroundColor: '#3177bf',
-        padding: 5,
-        height: 20,
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 5
-    },
-    btnTextModal: {
-        fontSize: 18,
+    TextInfoDescription: {
+        fontWeight: 'bold',
         color: '#fff',
-        fontWeight: 'bold'
+        fontSize: 18,
+        margin: 5,
+        marginTop: 30
     },
     descriptionText: {
-        padding: 10,
-        fontSize: 18,
-        color: '#444'
+        fontSize: 20,
+        color: '#fff'
     }
 })
