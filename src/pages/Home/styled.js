@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native'
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
+        padding: 5,
         backgroundColor: '#fff'
     },
     header: {
@@ -11,6 +11,11 @@ export const styles = StyleSheet.create({
         color: '#444',
         padding: 10,
         borderBottomWidth: 1,
-        borderColor: '#444'
+        borderColor: '#ddd',
+        textAlign: 'center'
+    },
+    listArea: {
+        paddingBottom: 60,
+        paddingTop: 30
     }
 })

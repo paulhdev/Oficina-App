@@ -10,7 +10,9 @@ export default class Home extends Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.header}>Oficina App</Text>
-                <List />
+                <View style={styles.listArea}>
+                    <List />
+                </View>
             </View>
         )
     }

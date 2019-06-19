@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, FlatList } from 'react-native'
+import { View, Text, FlatList, TouchableOpacity } from 'react-native'
 
 import axios from 'axios'
 
@@ -34,12 +34,17 @@ export default class List extends Component {
         else {
             return (
                 <View>
-                    <FlatList data={this.state.list} keyExtractor={list => list.id} renderItem={({ item }) => (
-                        <View>
-                            <Text>Cliente: {item.customer}</Text>
-                            <View>
-                                <Text>Vendedor: {item.seller}</Text>
-                                <Text>Valor: {item.value}</Text>
+                    <FlatList data={this.state.list} keyExtractor={item => item.id.toString()} renderItem={({ item }) => (
+                        <View style={styles.card}>
+                            <View style={styles.cardHeader}>
+                                <Text style={styles.customer}>Cliente: {item.customer}</Text>
+                                <Text style={styles.seller}>Vendedor: {item.seller}</Text>
+                            </View>
+                            <View style={styles.cardBody}>
+                                <Text style={styles.value}>Valor: {item.value}</Text>
+                                <TouchableOpacity onPress={() => { }} style={styles.btnDescription}>
+                                    <Text style={styles.btnText}>Descrição</Text>
+                                </TouchableOpacity>
                             </View>
                         </View>
                     )} />
