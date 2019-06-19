@@ -9,17 +9,18 @@ export default class CardItem extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            // De acordo com essa state o modal será exibido ou não
             modalVisible: false
         }
 
         this.showModal = this.showModal.bind(this)
         this.hideModal
     }
-
+    // Mostra o modal
     showModal() {
         this.setState({ modalVisible: true })
     }
-
+    // Esconde o modal
     hideModal(visible) {
         this.setState({ modalVisible: visible })
     }

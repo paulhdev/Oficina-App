@@ -10,12 +10,14 @@ export default class List extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            // loading: Usado para verificar se o request foi realizado e assim mostrar ou não a animação de loading
             loading: false,
             list: []
         }
     }
 
     componentDidMount() {
+        // Consumindo a API com axios e armazenando o valor das informações no state list
         axios.get('https://my-json-server.typicode.com/codificar/oficina/proposals')
             .then(res => {
                 this.state.loading = true
